@@ -58,15 +58,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Script\ArmyAction.cs" />
-     <Compile Include="Assets\Script\ArmyModel.cs" />
-     <Compile Include="Assets\Script\Arrow.cs" />
-     <Compile Include="Assets\Script\ArrowAttack.cs" />
-     <Compile Include="Assets\Script\Arrowcol.cs" />
-     <Compile Include="Assets\Script\Readcsv.cs" />
-     <Compile Include="Assets\Script\TableManager.cs" />
-     <Compile Include="Assets\Script\TableParser.cs" />
-     <None Include="Assets\WW4_Effects_Sub\Effect\Soldier\FrostArcher\FrostArcher_effect\shader\Bingdong_vogeo.shader" />
+     <Compile Include="Assets\Script\ArcherOperation\Archer.cs" />
+     <Compile Include="Assets\Script\ArcherOperation\Arrow.cs" />
+     <Compile Include="Assets\Script\ArcherOperation\ArrowAction.cs" />
+     <Compile Include="Assets\Script\DataOperation\ArmyModel.cs" />
+     <Compile Include="Assets\Script\DataOperation\CsvRead.cs" />
+     <Compile Include="Assets\Script\EnemyOperation\Enemy.cs" />
+     <Compile Include="Assets\ThirdParty\TableManager.cs" />
+     <Compile Include="Assets\ThirdParty\TableParser.cs" />
+     <None Include="Assets\Resources\WW4_Effects_Sub\Effect\Soldier\FrostArcher\FrostArcher_effect\shader\Bingdong_vogeo.shader" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/hehuan/second_test/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

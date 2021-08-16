@@ -9757,7 +9757,6 @@ GameObject:
   - component: {fileID: 7996399343178888046}
   - component: {fileID: 6034456084503304349}
   - component: {fileID: 7495252269843804439}
-  - component: {fileID: 3397455602570446099}
   m_Layer: 0
   m_Name: IceArrow
   m_TagString: arrow
@@ -9823,24 +9822,12 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7250114218345817618}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 3.4
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3397455602570446099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7250114218345817618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59cae2ba77d2a45c493cba5aa4def102, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7338826318511380546
 GameObject:
   m_ObjectHideFlags: 0
