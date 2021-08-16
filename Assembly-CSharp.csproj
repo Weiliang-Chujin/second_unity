@@ -58,12 +58,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Script\ArcherOperation\Archer.cs" />
-     <Compile Include="Assets\Script\ArcherOperation\Arrow.cs" />
-     <Compile Include="Assets\Script\ArcherOperation\ArrowAction.cs" />
-     <Compile Include="Assets\Script\DataOperation\ArmyModel.cs" />
-     <Compile Include="Assets\Script\DataOperation\CsvRead.cs" />
-     <Compile Include="Assets\Script\EnemyOperation\Enemy.cs" />
+     <Compile Include="Assets\Script\Config\CsvReader.cs" />
+     <Compile Include="Assets\Script\Controller\ArcherController.cs" />
+     <Compile Include="Assets\Script\Controller\ArrowController.cs" />
+     <Compile Include="Assets\Script\Controller\EnemyController.cs" />
+     <Compile Include="Assets\Script\Data\ArmyModel.cs" />
+     <Compile Include="Assets\Script\Data\ArrowModel.cs" />
      <Compile Include="Assets\ThirdParty\TableManager.cs" />
      <Compile Include="Assets\ThirdParty\TableParser.cs" />
      <None Include="Assets\Resources\WW4_Effects_Sub\Effect\Soldier\FrostArcher\FrostArcher_effect\shader\Bingdong_vogeo.shader" />

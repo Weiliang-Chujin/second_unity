@@ -323,7 +323,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: ad41a8f19d38f4b4f9f8a68338079071,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad41a8f19d38f4b4f9f8a68338079071,
         type: 3}
@@ -333,7 +333,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: ad41a8f19d38f4b4f9f8a68338079071,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad41a8f19d38f4b4f9f8a68338079071,
         type: 3}
@@ -759,9 +759,9 @@ MonoBehaviour:
   archerAnimator: {fileID: 656315477}
   archerHPSlider: {fileID: 732904813}
   archerHPText: {fileID: 1319127471}
-  csvRead: {fileID: 1867783693}
-  enemy: {fileID: 709092248}
-  arrowAction: {fileID: 1855377927}
+  csvReader: {fileID: 1867783693}
+  enemyController: {fileID: 709092248}
+  arrowController: {fileID: 1855377927}
   shootSpeed: 0
   atk: 0
   archerHP: 0
@@ -879,9 +879,9 @@ MonoBehaviour:
   enemy: {fileID: 709092247}
   enemyHPSlider: {fileID: 835849398}
   enemyHPText: {fileID: 193041276}
-  csvRead: {fileID: 1867783693}
-  arrowAction: {fileID: 1855377927}
-  archer: {fileID: 656315479}
+  csvReader: {fileID: 1867783693}
+  arrowController: {fileID: 1855377927}
+  archerController: {fileID: 656315479}
   enemyHP: 0
 --- !u!54 &709092250
 Rigidbody:
@@ -989,7 +989,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 1880536664}
   m_HandleRect: {fileID: 0}
@@ -1077,7 +1077,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 118814667}
   m_HandleRect: {fileID: 0}
@@ -1592,7 +1592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02532695973aa4e4499ffaeadd140c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 709092248}
+  enemyController: {fileID: 709092248}
   arrowPrefab: {fileID: 7250114218345817618, guid: d8271880007754e0e8d995260bc45c35,
     type: 3}
 --- !u!4 &1855377928
