@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -23,10 +24,14 @@ public class ArcherController : MonoBehaviour
     [HideInInspector]
     public float archerHP; //弓箭手目前血量
     private float timer; //计时器，用于弓箭手攻击速度的限制
-    
-    void Start()
+
+    private void Awake()
     {
         armyData = CsvReader.Readcsv();
+    }
+
+    void Start()
+    {
         shootSpeed = armyData.ShootSpeed;
         timer = shootSpeed;
         atk = armyData.Atk;
