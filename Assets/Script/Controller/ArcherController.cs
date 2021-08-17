@@ -51,7 +51,7 @@ public class ArcherController : MonoBehaviour
     }
     
     //弓箭手动作切换
-    public void SwitchAction()
+    private void SwitchAction()
     {
         //A键攻击，敌人血量要大于0且计时器大于攻速才进行攻击
         if (Input.GetKeyDown(KeyCode.A) && enemyController.enemyHP > 0 && timer > shootSpeed) 
@@ -73,7 +73,7 @@ public class ArcherController : MonoBehaviour
     }
     
     //攻击事件，绑定在攻击动画后
-    public void Attack()
+    private void Attack()
     {
         arrowController.CreateArrow();
         

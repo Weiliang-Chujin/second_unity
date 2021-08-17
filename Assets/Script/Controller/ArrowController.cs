@@ -44,7 +44,7 @@ public class ArrowController : MonoBehaviour
     }
     
     //移动弓箭，让其z坐标移动
-    public void MoveArrow()
+    private void MoveArrow()
     {
         foreach (ArrowModel arrow in arrows)
         {
