@@ -364,7 +364,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: 9fa4f7c69a3654eef94b6e416f825c6e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad41a8f19d38f4b4f9f8a68338079071, type: 3}
 --- !u!1 &185460332
@@ -759,10 +759,8 @@ MonoBehaviour:
   archerAnimator: {fileID: 656315477}
   archerHPSlider: {fileID: 732904813}
   archerHPText: {fileID: 1319127471}
-  csvReader: {fileID: 1867783693}
   enemyController: {fileID: 709092248}
   arrowController: {fileID: 1855377927}
-  shootSpeed: 0
   atk: 0
   archerHP: 0
 --- !u!1 &705507993
@@ -879,7 +877,6 @@ MonoBehaviour:
   enemy: {fileID: 709092247}
   enemyHPSlider: {fileID: 835849398}
   enemyHPText: {fileID: 193041276}
-  csvReader: {fileID: 1867783693}
   arrowController: {fileID: 1855377927}
   archerController: {fileID: 656315479}
   enemyHP: 0
@@ -1618,7 +1615,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1867783694}
-  - component: {fileID: 1867783693}
   m_Layer: 0
   m_Name: EventControl
   m_TagString: start
@@ -1626,18 +1622,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1867783693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1867783692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b13dbec6ef6344f19a15393a3bca3f66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1867783694
 Transform:
   m_ObjectHideFlags: 0
