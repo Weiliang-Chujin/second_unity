@@ -5,18 +5,12 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /*
- * 读取csv数据存入ArmyModel
+ * 读取csv数据返回ArmyModel士兵数据
  */
-public class CsvReader : MonoBehaviour
+public class CsvReader 
 {
-    public ArmyModel armyData; //保存读取的csv数据
-    
-    void Awake()
-    {
-        armyData = Readcsv();
-    }
-    
-    public ArmyModel Readcsv()
+
+    public static ArmyModel Readcsv()
     {
         TableManager<ArmyModel> armyModel = new TableManager<ArmyModel>();
         List<ArmyModel> list = armyModel.GetAllModel();

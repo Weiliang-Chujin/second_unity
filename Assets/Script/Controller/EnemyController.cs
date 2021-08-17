@@ -13,7 +13,6 @@ public class EnemyController : MonoBehaviour
     public Slider enemyHPSlider; //敌人血量条
     public Text enemyHPText; //敌人血量显示数字
     
-    public CsvReader csvReader; //读取csv文件类
     public ArrowController arrowController; //弓箭控制类
     public ArcherController archerController; //弓箭手控制类
     
@@ -23,7 +22,7 @@ public class EnemyController : MonoBehaviour
     
      void Start()
      {
-         enemyMaxHP = csvReader.armyData.MaxHp;
+         enemyMaxHP = archerController.armyData.MaxHp;
          enemyHP = enemyMaxHP;
          enemyHPSlider.value = enemyHP / enemyMaxHP;
          ModifyEnemyHP(0);

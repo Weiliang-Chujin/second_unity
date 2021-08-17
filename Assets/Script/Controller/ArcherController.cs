@@ -12,11 +12,12 @@ public class ArcherController : MonoBehaviour
     public Slider archerHPSlider; //弓箭手血量条
     public Text archerHPText; //弓箭手血量显示数字
     
-    public CsvReader csvReader; //读取csv文件类
+    // public CsvReader csvReader; //读取csv文件类
     public EnemyController enemyController; //敌人控制类
     public ArrowController arrowController; //弓箭控制类
     
-    public float shootSpeed; //弓箭手攻速
+    public ArmyModel armyData; //保存读取的csv数据
+    private float shootSpeed; //弓箭手攻速
     public int atk; //弓箭手攻击力
     private float archerMaxHP; //弓箭手最大血量
     [HideInInspector]
@@ -25,10 +26,11 @@ public class ArcherController : MonoBehaviour
     
     void Start()
     {
-        shootSpeed = csvReader.armyData.ShootSpeed;
+        armyData = CsvReader.Readcsv();
+        shootSpeed = armyData.ShootSpeed;
         timer = shootSpeed;
-        atk = csvReader.armyData.Atk;
-        archerMaxHP = csvReader.armyData.MaxHp;
+        atk = armyData.Atk;
+        archerMaxHP = armyData.MaxHp;
         archerHP = archerMaxHP;
         ModifyArcherHP(0);
     }
