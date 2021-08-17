@@ -30,7 +30,7 @@ public class EnemyController : MonoBehaviour
      }
      
     //修改敌人血量和血量条
-    public void ModifyEnemyHP(int addEnemyHP)
+    private void ModifyEnemyHP(int addEnemyHP)
     {
         enemyHP += addEnemyHP;
         
@@ -45,7 +45,7 @@ public class EnemyController : MonoBehaviour
     }
     
     //销毁敌人，并销毁所有弓箭，弓箭手状态切换为闲置状态
-    public void DestroyEnemy()
+    private void DestroyEnemy()
     {
         Destroy(enemy);
         arrowController.DestroyArrows();
@@ -55,7 +55,7 @@ public class EnemyController : MonoBehaviour
     }
     
     //判断弓箭和敌人是否发生触发，发生触发，将那个弓箭销毁，并修改敌人血量
-    public void OnTriggerEnter(Collider collider)
+    private void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.tag == "arrow")
         {

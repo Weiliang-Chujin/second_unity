@@ -39,7 +39,7 @@ public class ArcherController : MonoBehaviour
     }
     
     //修改弓箭手血量和血量条
-    public void ModifyArcherHP(int addArcherHP)
+    private void ModifyArcherHP(int addArcherHP)
     {
         archerHP += addArcherHP;
         if (archerHP <= 0)
