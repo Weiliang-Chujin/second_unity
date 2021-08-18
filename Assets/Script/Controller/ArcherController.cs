@@ -13,7 +13,6 @@ public class ArcherController : MonoBehaviour
     public Slider archerHPSlider; //弓箭手血量条
     public Text archerHPText; //弓箭手血量显示数字
     
-    // public CsvReader csvReader; //读取csv文件类
     public EnemyController enemyController; //敌人控制类
     public ArrowController arrowController; //弓箭控制类
     
