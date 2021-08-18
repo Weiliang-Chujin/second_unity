@@ -18,6 +18,7 @@ public class ArcherController : MonoBehaviour
     
     public ArmyModel armyData; //保存读取的csv数据
     private float shootSpeed; //弓箭手攻速
+    private float attackTime; //攻击时间间隔
     public int atk; //弓箭手攻击力
     private float archerMaxHP; //弓箭手最大血量
     [HideInInspector]
@@ -32,7 +33,8 @@ public class ArcherController : MonoBehaviour
     void Start()
     {
         shootSpeed = armyData.ShootSpeed;
-        timer = shootSpeed;
+        attackTime = 1/shootSpeed;
+        timer = attackTime;
         atk = armyData.Atk;
         archerMaxHP = armyData.MaxHp;
         archerHP = archerMaxHP;
@@ -59,8 +61,8 @@ public class ArcherController : MonoBehaviour
     //弓箭手动作切换
     private void SwitchAction()
     {
-        //A键攻击，敌人血量要大于0且计时器大于攻速才进行攻击
-        if (Input.GetKeyDown(KeyCode.A) && enemyController.enemyHP > 0 && timer > shootSpeed) 
+        //A键攻击，敌人血量要大于0且计时器大于攻击时间间隔才进行攻击
+        if (Input.GetKeyDown(KeyCode.A) && enemyController.enemyHP > 0 && timer > attackTime) 
         {
             timer = 0.0f;
             archerAnimator.SetTrigger("isAttack");
