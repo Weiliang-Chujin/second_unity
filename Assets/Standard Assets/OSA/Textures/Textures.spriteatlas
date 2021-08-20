@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Textures
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 0
+      compressionQuality: 0
+      maxTextureSize: 0
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: c5f92795d49795a4bbdb0c5d11adb181, type: 3}
+    - {fileID: 2800000, guid: 787578eb3a0ae5446999ae02ec0a4f19, type: 3}
+    - {fileID: 2800000, guid: e3791f06fd42a8345a2b157e3f44c5e4, type: 3}
+    - {fileID: 2800000, guid: 530a50bdccc352b448e5e05c1a8a8759, type: 3}
+    - {fileID: 2800000, guid: 27193086681062a4b8cd1eb34c6c1881, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: c5f92795d49795a4bbdb0c5d11adb181, type: 3}
+  - {fileID: 21300000, guid: e3791f06fd42a8345a2b157e3f44c5e4, type: 3}
+  - {fileID: 21300000, guid: 27193086681062a4b8cd1eb34c6c1881, type: 3}
+  - {fileID: 21300000, guid: 787578eb3a0ae5446999ae02ec0a4f19, type: 3}
+  - {fileID: 21300000, guid: 530a50bdccc352b448e5e05c1a8a8759, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - ellipsis
+  - left-to-right-gradient
+  - top-to-bottom-gradient
+  - filled_circle_with_arrow
+  - plus
+  m_Tag: Textures
+  m_IsVariant: 0

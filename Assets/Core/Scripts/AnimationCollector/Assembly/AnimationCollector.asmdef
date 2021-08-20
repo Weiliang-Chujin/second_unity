@@ -1,0 +1,15 @@
+{
+    "name": "AnimationCollector",
+    "references": [
+        "GUID:575a44d3a1b4a4aa598d24ad9a11f2d2"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -58,6 +58,32 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Core\Scripts\AnimatedButton.cs" />
+     <Compile Include="Assets\Core\Scripts\Audio\AudioConstant.cs" />
+     <Compile Include="Assets\Core\Scripts\Audio\AudioHelper.cs" />
+     <Compile Include="Assets\Core\Scripts\Audio\AudioPlayerHelper.cs" />
+     <Compile Include="Assets\Core\Scripts\Dialogs\BasicCore\Dialog.cs" />
+     <Compile Include="Assets\Core\Scripts\Dialogs\BasicCore\DialogContext.cs" />
+     <Compile Include="Assets\Core\Scripts\Dialogs\BasicCore\DialogShowOption.cs" />
+     <Compile Include="Assets\Core\Scripts\Dialogs\BasicCore\DialogUtil.cs" />
+     <Compile Include="Assets\Core\Scripts\OSAExtend\OSAListBase.cs" />
+     <Compile Include="Assets\Core\Scripts\OSAExtend\OSAListPanelBase.cs" />
+     <Compile Include="Assets\Core\Scripts\OSAExtend\OSAPagingPanel.cs" />
+     <Compile Include="Assets\Example\CollectAnimation\CoinAnimationCollector.cs" />
+     <Compile Include="Assets\Example\CollectAnimation\CollectExample.cs" />
+     <Compile Include="Assets\Example\CollectAnimation\CollectExampleType.cs" />
+     <Compile Include="Assets\Example\CollectAnimation\CollectItem\CoinCollectItem.cs" />
+     <Compile Include="Assets\Example\CollectAnimation\CollectorManager.cs" />
+     <Compile Include="Assets\Example\CollectAnimation\CurrencyType.cs" />
+     <Compile Include="Assets\Example\CollectAnimation\CurrencyUIUpdater.cs" />
+     <Compile Include="Assets\Example\CollectAnimation\Mediator\BaseAnimationCollector.cs" />
+     <Compile Include="Assets\Example\CollectAnimation\Mediator\BaseCollectItem.cs" />
+     <Compile Include="Assets\Example\CollectAnimation\Mediator\CollectorInfoConvert.cs" />
+     <Compile Include="Assets\Example\CollectAnimation\UIUpdaterBase.cs" />
+     <Compile Include="Assets\Example\CommonMessageDialog.cs" />
+     <Compile Include="Assets\Example\ExampleScript.cs" />
+     <Compile Include="Assets\Example\OSAExample\ExampleCell.cs" />
+     <Compile Include="Assets\Example\OSAExample\OSAExample.cs" />
      <Compile Include="Assets\Script\Config\CsvReader.cs" />
      <Compile Include="Assets\Script\Controller\ArcherController.cs" />
      <Compile Include="Assets\Script\Controller\ArrowController.cs" />
@@ -273,6 +299,9 @@
  </Reference>
  <Reference Include="nunit.framework">
  <HintPath>/Users/hehuan/second_test/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>/Users/hehuan/second_test/Assets/Plugins/DOTween.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -625,6 +654,32 @@
  <Reference Include="mscorlib">
  <HintPath>/Applications/Unity/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="OSA-Editor.csproj">
+      <Project>{F763D6F7-CB50-F6A8-F67D-8464953DD139}</Project>
+      <Name>OSA-Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="BasicModules.csproj">
+      <Project>{327415A2-1C89-52D6-7CDD-AE934D14E09E}</Project>
+      <Name>BasicModules</Name>
+    </ProjectReference>
+    <ProjectReference Include="OSA.csproj">
+      <Project>{2CA1BB7D-0625-58A9-46CE-CA1EC38B5F24}</Project>
+      <Name>OSA</Name>
+    </ProjectReference>
+    <ProjectReference Include="Audio.csproj">
+      <Project>{BCEEB41D-2F64-9746-B3A0-8A86275733C7}</Project>
+      <Name>Audio</Name>
+    </ProjectReference>
+    <ProjectReference Include="DOTween.Modules.csproj">
+      <Project>{1FC5C1C0-051E-4D9C-58C2-03D677269448}</Project>
+      <Name>DOTween.Modules</Name>
+    </ProjectReference>
+    <ProjectReference Include="AnimationCollector.csproj">
+      <Project>{59381700-A7BA-570B-2EC1-62CF111FBEE2}</Project>
+      <Name>AnimationCollector</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
